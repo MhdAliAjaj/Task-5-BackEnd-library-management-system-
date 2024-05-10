@@ -4,13 +4,13 @@
             <a href="{{ url('roles') }}" class="btn btn-primary mx-1">Roles</a>
             <a href="{{ url('permissions') }}" class="btn btn-info mx-1">Permissions</a>
             <a href="{{ url('users') }}" class="btn btn-warning mx-1">Users</a>
-            <a href=" route{{('admin.add.mainBook') }}"class="btn btn-info mx-1" >Classification of major books</a>
-            <a href="{{ url('admin.add.subBook') }}" class="btn btn-warning mx-1">Classification of sub-books</a>
-            <a href="{{ url('admin.add.Book') }}"class="btn btn-warning mx-1">Add Book</a>
-          
-                
-             
-
+            <select name="book" id="">
+                <option value="" selected>Choose one</option>
+                <option value="">Classification of major books</option>
+                <option value="">Classification of sub-books</option>
+                <option value="">ِAdd Book</option>
+            </select>
+            {{-- <a href="{{ url('book') }}" class="btn btn-warning mx-1">Users</a> --}}
         </div>
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             
